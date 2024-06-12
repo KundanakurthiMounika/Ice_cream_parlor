@@ -61,7 +61,7 @@ INSERT INTO allergens (allergen_name) VALUES
 
 -- Sample data for customer suggestions and allergy concerns
 INSERT INTO customer_suggestions (customer_name, flavor_suggestion, allergy_concern) VALUES
-('Alice', 'Blueberry Cheesecake', 'Dairy'),
-('Bob', 'Banana Split', 'None'),
-('Charlie', 'Peach Cobbler', 'Gluten'),
-('Dana', 'Lemon Sorbet', 'None');
+('Hitesh','Banana Split','Dairy'),
+('Hari', 'Blueberry Cheesecake', 'None'),
+('Ravi', 'Lemon Sorbet', 'Gluten'),
+('Ramu', 'Peach Cobbler', 'None');
