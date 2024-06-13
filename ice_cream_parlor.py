@@ -10,20 +10,6 @@ def create_connection():
     except sqlite3.Error as e:
         print(e)
     return conn
-
-def execute_script(script_path):
-    conn = create_connection()
-    with open(script_path, 'r') as file:
-        script = file.read()
-    try:
-        cursor = conn.cursor()
-        cursor.executescript(script)
-        conn.commit()
-        print("Database initialized successfully.")
-    except sqlite3.Error as e:
-        print(e)
-    finally:
-        conn.close()
 def view_flavors():
     conn = create_connection()
     try:
